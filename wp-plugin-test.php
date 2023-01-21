@@ -40,7 +40,7 @@ foreach ($all_plugins as $key => $value) {
 echo '</select>';
 echo '<label for="requests-number">Number of requests to perform:</label>';
 echo '<input type="number" id="requests-number" name="requests-number" min="10" max="1000" step="1" value="' . $numberOfRequestsToPefrorm . '">';
-echo '<label for="page-path">Page path to load:</label>';
+echo '<label for="page-path">URL for test: ' . home_url() . '</label>';
 echo '<input type="text" id="page-path" name="page-path" value="' . $pagePath . '">';
 echo '<input type="submit" name="submit" value="Submit">';
 echo '</form>';
